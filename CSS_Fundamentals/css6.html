@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Selector</title>
+    <style>
+        /* Правило для всех элементов input */
+        input {
+            margin: 10px;
+        }
+
+        /* Правило для input с атрибутом required */
+        input[required] {
+            border: 1px solid red;
+        }
+
+        /* Правило для input с атрибутом type="submit" */
+        input[type=submit] {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" required="required" />
+        <br />
+        <input type="password" required="required" />
+        <br />
+        <input type="submit" />
+    </form>
+</body>
+</html>
